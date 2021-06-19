@@ -52,8 +52,9 @@ call s:amap(   'gÉ', ':execute "silent! tablast"<CR> '   )    "[gÉ] au dernier
 call s:amap(   'gT', '<C-]>' )    "[gT] est libéré et peut agir sur les tags
 call s:amap(   '«',  '<'     )    "[<] est moins accessible que [«]
 call s:amap(   '»',  '>'     )    "idem pour [»] et [>]
-call s:amap(   ';',  ','     )    "idem pour [,] et [;]
-call s:amap(   ',',  ';'     )    "qui sont permutés
+" Utiliser comme leader, pas besoin
+"call s:amap(   ';',  ','     )    "idem pour [,] et [;]
+"call s:amap(   ',',  ';'     )    "qui sont permutés
 call s:amap(  'g,',  'g;'    )    "idem pour [g,] et [g;]
 call s:amap(  'g;',  'g,'    )    "qui sont permutés
 call s:amap(   'é',  'w'     )    "[w] est peu accessible, on utilise [é]
