@@ -32,10 +32,11 @@ call s:amap(   'r',  'l'     )    "on préserve {hjkl} pour les directions
 call s:amap(   'C',  'H'     )    "{HJKL} devient [CTSR]
 call s:amap(   'T',  'J'     )    "{HJKL} devient [CTSR]
 call s:amap(   'S',  'K'     )    "{HJKL} devient [CTSR]
-call s:amap(   'R',  'L'     )    "{HJKL} devient [CTSR]
+" call s:amap(   'R',  'L'     )    "{HJKL} devient [CTSR] -> free R
 call s:amap(  'gt', 'gj'     )    "on préserve les variantes avec 'g'
 call s:amap(  'gs', 'gk'     )    "on préserve les variantes avec 'g'
-call s:amap(  'zt', 'zj'     )    "on préserve les variantes avec 'z'
+" call s:amap(  'zt', 'zj'     )    "on préserve les variantes avec 'z' -> I
+" like zt better
 call s:amap(  'zs', 'zk'     )    "on préserve les variantes avec 'z'
 call s:amap(   'h',  't'     )    "{t} devient [h] pour être proche de [f]
 call s:amap(   'H',  'T'     )    "idem pour {T} et [H]
