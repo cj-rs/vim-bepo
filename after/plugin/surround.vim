@@ -2,8 +2,8 @@
 if exists("g:loaded_surround") && g:loaded_surround && exists("g:surround_no_mappings") && g:surround_no_mappings
     " based on https://github.com/tpope/vim-surround/blob/f51a26d3710629d031806305b6c8727189cd1935/plugin/surround.vim#L599
     nmap dk  <Plug>Dsurround
-    nmap ck  <Plug>Csurround
-    nmap cK  <Plug>CSurround
+    nmap lk  <Plug>Csurround
+    nmap lK  <Plug>CSurround
     nmap yk  <Plug>Ysurround
     nmap yK  <Plug>YSurround
     nmap ykk <Plug>Yssurround
