@@ -1,21 +1,21 @@
 " Require to set g:surround_no_mappings = 1 in your vimrc
 if exists("g:loaded_surround") && g:loaded_surround && exists("g:surround_no_mappings") && g:surround_no_mappings
     " based on https://github.com/tpope/vim-surround/blob/f51a26d3710629d031806305b6c8727189cd1935/plugin/surround.vim#L599
-    nmap dk  <Plug>Dsurround
-    nmap lk  <Plug>Csurround
-    nmap lK  <Plug>CSurround
-    nmap yk  <Plug>Ysurround
-    nmap yK  <Plug>YSurround
-    nmap ykk <Plug>Yssurround
-    nmap yKk <Plug>YSsurround
-    nmap yKK <Plug>YSsurround
-    xmap K   <Plug>VSurround
-    xmap gK  <Plug>VgSurround
+    nmap dj  <Plug>Dsurround
+    nmap lj  <Plug>Csurround
+    nmap lJ  <Plug>CSurround
+    nmap yj  <Plug>Ysurround
+    nmap yJ  <Plug>YSurround
+    nmap yjj <Plug>Yssurround
+    nmap yJj <Plug>YSsurround
+    nmap yJJ <Plug>YSsurround
+    xmap J   <Plug>VSurround
+    xmap gJ  <Plug>VgSurround
     if !exists("g:surround_no_insert_mappings") || ! g:surround_no_insert_mappings
-        if !hasmapto("<Plug>Isurround","i") && "" == mapcheck("<C-S>","i")
-            imap    <C-K> <Plug>Isurround
-        endif
-        imap      <C-G>k <Plug>Isurround
-        imap      <C-G>K <Plug>ISurround
+        " if !hasmapto("<Plug>Isurround","i") && "" == mapchecj("<C-S>","i")
+            " imap    <C-J> <Plug>Isurround
+        " endif
+        imap      <C-G>j <Plug>Isurround
+        imap      <C-G>J <Plug>ISurround
     endif
 endif
